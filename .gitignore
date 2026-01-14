@@ -1,0 +1,22 @@
+# Eclipse workspace (CRITICAL)
+.metadata/
+
+# Java / Maven
+target/
+*.class
+
+# IDE
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+
+# Logs
+*.log
+
+# Env files
+.env
+
+# OS
+.DS_Store

@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Logo Styling */
+.logo {
+  height: 5.5em;
+  padding: 1.2em;
+  will-change: transform, filter;
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 8px 24px rgba(76, 175, 80, 0.45));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 8px 24px rgba(97, 218, 251, 0.6));
+}
+
+/* Smooth rotation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 18s linear;
+  }
+}
+
+/* Card improvement */
+.card {
+  padding: 2em;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-top: 1.5rem;
+}
+
+/* Muted helper text */
+.read-the-docs {
+  color: #777;
+  font-size: 0.9rem;
+}
